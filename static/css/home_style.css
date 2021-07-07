@@ -1,0 +1,343 @@
+/**Fonts***/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,800;1,900&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+/***Navbar****/
+.navbar{
+  background-color: #42A5F5;
+  padding: 1rem 8rem;
+  z-index: 1;
+}
+
+.navbar .navbar-brand{
+  font-size: 1.4rem;
+  font-weight: 700;
+  color:white;
+}
+.navbar .navbar-brand:hover{
+  color:#FFCA28;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a{
+  color:white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0 1rem;
+  font-weight: bold;
+}
+
+#navbarSupportedContent > ul > li:nth-child(n) > a:hover,
+#navbarSupportedContent > ul > li:nth-child(n) > a:active{
+  color:#FFCA28;
+}
+
+#navbarSupportedContent > button{
+  background: white;
+  color:#42A5F5 ;
+  font-weight: 600;
+  padding: 0.4rem 1.4rem;
+  border-radius: 30px;
+}
+
+#navbarSupportedContent > button:hover{
+  background: white;
+  color:#FFCA28;
+
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar{
+    padding: 1rem;
+  }
+  #navbarSupportedContent > ul{
+    padding-left: 0.8rem;
+  }
+  #navbarSupportedContent > ul > li:nth-child(n) > a {
+    padding:  0.8rem 0;
+  }
+  .mid .hero h2{
+    font-size: 2.5rem;
+  }
+  .mid .hero p{
+    font-size: 1rem;
+  }
+
+  .mid .hero a{
+    font-size: 0.9rem;
+  }
+}
+
+/***Video navbar***/
+.mid{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+}
+
+.mid video{
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  object-fit: cover;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  z-index: -1;
+}
+
+.hero{
+  position: relative;
+}
+
+.hero h2{
+  font-weight: 500;
+}
+
+.hero span{
+  color: #42A5F5;
+}
+
+.hero span:hover{
+  color:#FFCA28;
+}
+
+.mid .hero p{
+  width: 55%;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  padding-bottom: 1rem;
+}
+
+.mid .hero a{
+  background: white;
+  color:#42A5F5 ;
+  font-weight: 600;
+  padding: 0.7rem 2rem;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.mid .hero a:hover{
+  background: white;
+  color:#FFCA28;
+}
+
+/****about section****/
+.about{
+  background-color: #ECEFF1;
+}
+
+.about .text{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+}
+
+.about .text h6{
+  color:#90A4AE;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+/*.about .text h6:hover{
+  color:#FFCA28;
+}*/
+.about .text h2{
+  font-weight: 700;
+  font-size: 2.7rem;
+}
+.about .text span{
+  color:#42A5F5;
+}
+
+.about .text span:hover{
+  color:#FFCA28;
+}
+
+.about .text p{
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  text-align: justify;
+}
+
+.about .text a{
+  color:#42A5F5 ;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.about .text a:hover{
+  color:#FFCA28;
+}
+
+/*****Service section***/
+.service{
+  background-color: #f5f5f5;
+}
+.service #cercle1{
+  font-size: 50px;
+  color: #81D4FA;
+}
+.service #cercle2{
+  font-size: 50px;
+  color: #A5D6A7;
+}
+.service #cercle3{
+  font-size: 50px;
+  color: #BCAAA4;
+}
+.service #cercle4{
+  font-size: 50px;
+  color: #FFE082;
+}
+.service #cercle5{
+  font-size: 50px;
+  color: #F48FB1;
+}
+.service #cercle6{
+  font-size: 50px;
+  color: #CFD8DC;
+}
+
+.service .number{
+  color:black;
+  font-size: 40px;
+  text-align: center;
+}
+
+.service .icon{
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.service h5{
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.service h5:hover{
+  color: #FFCA28;
+}
+
+.service p{
+  text-align: center;
+  font-size: 18px;
+}
+
+.service .heading h2{
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+.service .heading span{
+  color:#42A5F5;
+}
+
+.service .heading span:hover{
+  color:#FFCA28;
+}
+
+.service .one{
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  border-radius: 10% / 50%;
+  border-radius: 50% 20% / 10% 90%;
+  box-shadow: 5px 10px #888888
+}
+
+
+/****Footer****/
+body > footer > div.container.p-4 > section.links > div > div > div.col-lg-6.col-md-12.mb-4.mb-md-0 > h5{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color:#42A5F5;
+}
+
+body > footer > div.container.p-4 > section.links > div > div > div:nth-child(n) > h5{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color:#42A5F5;
+}
+
+body > footer > div.container.p-4 > section.links > div > div > div:nth-child(n) > ul > li:nth-child(n) > a{
+  color: #42A5F5 !important;
+}
+
+body > footer > section{
+  background:  #42A5F5 ;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+body > footer > section > p > span{
+  font-weight: 700;
+  color: white;
+  letter-spacing: 3px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body > footer > section > p > a{
+  background: white;
+  color:#42A5F5 ;
+  font-weight: 600;
+  padding: 0.4rem 1.4rem;
+  border-radius: 25px;
+  text-decoration: none;
+}
+body > footer > section > p > a:hover{
+    color:#FFCA28 ;
+}
+
+body > footer > div.container.p-4 > section.links > div > div > div:nth-child(n) > ul > li:nth-child(n) > a{
+  text-decoration: none;
+  color:black !important;
+}
+
+body > footer > div.container.p-4 > section.links > div > div > div:nth-child(n) > ul > li:nth-child(n) > a:hover{
+  color: #FFCA28 !important;
+}
+
+body > footer > div.text-center.p-3 > a{
+  text-decoration:none;
+  font-weight:bold;
+  color:#42A5F5;
+  letter-spacing: 3px;
+}
+
+body > footer > div.text-center.p-3 > a:hover{
+  color: #FFCA28;
+}
+/**** Blue = #42A5F5 ***/
+/**** Jaune = #FFCA28 ***/
+/**** gris = #90A4AE***/
+/*** gris clair = #ECEFF1 => background***/
+/***** white smoke = #f5f5f5 => background ***/
